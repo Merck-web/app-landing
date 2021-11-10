@@ -2,6 +2,9 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'landingApp',
+    script: [
+      { hid: 'stripe', src: '//assets/js/main.js', defer: true }
+    ],
     htmlAttrs: {
       lang: 'en'
     },
@@ -30,7 +33,16 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/fontawesome',
   ],
+  fontawesome: {
+    component: 'fa',
+    icons: {
+      solid: true,
+      brands: true
+    }
+  },
+
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

@@ -11,11 +11,15 @@
     "sass-loader": "^10.2.0"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
     "sass": "^1.42.1",
-    "sass-loader": "^10.2.0"
+    "sass-loader": "^10.2.0",
+    "vue-meta": "^2.4.0"
   },
   "devDependencies": {}
 }
