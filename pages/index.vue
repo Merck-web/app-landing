@@ -1,15 +1,17 @@
 <template>
-<div>
-  2
-</div>
+  <div class="container">
+    <div class="ave">
+      <Avetures />
+    </div>
+  </div>
 </template>
+
+<script>
+export default {};
+</script>
 <style lang="scss" scoped>
-div{
-    background-color: red;
+.ave{
+  min-height: 100vh;
+  width: 100%;
 }
 </style>
-<script>
-export default {
-
-}
-</script>

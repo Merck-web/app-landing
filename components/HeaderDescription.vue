@@ -13,12 +13,23 @@
       <div class="download">
         <button>download app</button>
       </div>
-      <div class="play">
+      <div @click="$emit('openModal1')" class="play">
         <button><fa icon="play" /></button>
       </div>
     </div>
   </div>
 </template>
+</template>
+ <script>
+export default {
+  data() {
+    return {
+    }
+  },
+  methods: {
+  }
+};
+</script>
 <style lang="scss" scoped>
 .wrapper-header {
   margin-right: 160px;

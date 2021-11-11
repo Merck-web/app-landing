@@ -1,7 +1,10 @@
  <template>
   <div class="wrapper">
     <div class="container">
-      <NavBar />
+      <div @scroll="stickyNav" v-if="navModalWindow" class="nav">
+        <NavBar />
+      </div>
+
       <div class="content">
         <HeaderDescription />
         <HeaderImage />
@@ -12,12 +15,54 @@
       <div class="efect-2"><fa icon="plus" /></div>
       <div class="efect-3"><fa icon="plus" /></div>
     </div>
+    <div @openModal1="openModal()" v-if="modalWindow" class="modal-window">
+      <ModalHeader />
+    </div>
   </div>
 </template>
  <script>
-export default {};
+export default {
+  data() {
+    return {
+      modalWindow: false,
+      navModalWindow: true,
+    };
+  },
+  methods: {
+    openModal() {
+      this.modalWindow = !this.modalWindow;
+      this.navModalWindow = !this.navModalWindow;
+      if (this.modalWindow === true) {
+        document.body.style.overflowY = "hidden";
+      } else {
+        document.body.style.overflowY = "auto";
+      }
+    },
+    stickyNav() {
+      if (window.pageYOffset > 200) {
+        let nav = document.querySelector(".nav");
+        nav.classList.add("stickyNav");
+      } else {
+        let nav = document.querySelector(".nav");
+        nav.classList.remove("stickyNav");
+      }
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 0 20px 10px;
+}
+.stickyNav {
+  background-color: var(--maincolor);
+  transition:var(--transition);
+}
 .wrapper {
   padding-bottom: 220px;
   background: var(--maincolor);
@@ -27,7 +72,7 @@ export default {};
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 60px;
+    padding-top: 200px;
   }
   .effects {
     .efect-1 {

@@ -44,15 +44,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-}
+
 .wrapper-nav {
   padding-top: 35px;
 }
 .row {
+
   justify-content: space-between;
   align-items: center;
   color: var(--black-000);
@@ -84,6 +81,7 @@ export default {
     cursor: pointer;
     line-height: 32px;
     font-size: 26px;
+    padding-left: 40px;
     svg {
       display: none;
     }
