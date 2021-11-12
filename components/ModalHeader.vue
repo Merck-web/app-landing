@@ -4,7 +4,7 @@
     <div class="modal-content">
       <div class="row text">
         <p>your video</p>
-        <span @click="$emit('openModal1')">X</span>
+        <span  @click="$emit('openModal1')">X</span>
       </div>
       <div class="row video">
           <iframe
@@ -37,12 +37,14 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+      z-index: 9999;
   .modal-content {
     padding: 10px 20px;
     max-width: 1000px;
     width: 100%;
     height: 540px;
     background-color: var(--bg-dark);
+
   }
   .text {
     display: flex;
@@ -57,6 +59,7 @@ export default {
     }
     span{
             color: white;
+            cursor: pointer;
     }
   }
   .video {

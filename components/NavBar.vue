@@ -9,7 +9,7 @@
           :class="{ active: current === link || current === null }"
           @click="current = link"
           v-for="link in links"
-          :key="link"
+          :key="link.id"
         >
           {{ link.link }}
         </li>

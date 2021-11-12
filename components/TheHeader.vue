@@ -6,7 +6,7 @@
       </div>
 
       <div class="content">
-        <HeaderDescription />
+        <HeaderDescription @openModal1="openModal" />
         <HeaderImage />
       </div>
     </div>
@@ -16,7 +16,7 @@
       <div class="efect-3"><fa icon="plus" /></div>
     </div>
     <div @openModal1="openModal()" v-if="modalWindow" class="modal-window">
-      <ModalHeader />
+      <ModalHeader @openModal1="openModal"/>
     </div>
   </div>
 </template>
@@ -48,6 +48,14 @@ export default {
       }
     },
   },
+  mounted() {
+  window.onload = () => {
+    console.log('loaded')
+      document.querySelector('body').onscroll = () => {
+      this.stickyNav()
+    }
+  }
+  }
 };
 </script>
 <style lang="scss" scoped>
