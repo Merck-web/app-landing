@@ -4,7 +4,7 @@
     <div class="modal-content">
       <div class="row text">
         <p>your video</p>
-        <span  @click="$emit('openModal1')">X</span>
+        <span  @click="$emit('openModal1')"><fa icon="window-close" /></span>
       </div>
       <div class="row video">
           <iframe

@@ -50,3 +50,16 @@ button{
     border: none;
     cursor: pointer;
 }
+.owl-theme .owl-dots .owl-dot.active span{
+    background: var(--black-100) !important;
+}
+.owl-theme .owl-dots .owl-dot span{
+    background: var(--maincolor) !important;
+    width: 40px !important;
+    height: 10px !important;
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 0;
+    padding-top: 60px;
+    padding-bottom: 90px;
+}

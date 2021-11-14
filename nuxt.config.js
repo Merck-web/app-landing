@@ -3,7 +3,7 @@ export default {
   head: {
     title: 'landingApp',
     script: [
-      { hid: 'stripe', src: '//assets/js/main.js', defer: true }
+      { hid: 'stripe', src: '//assets/js/main.js', defer: true },
     ],
     htmlAttrs: {
       lang: 'en'
@@ -26,8 +26,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {src: '~/plugins/slick.js', mode: 'client'},
-    '~/assets/js/main.js'
+    {src: '~/plugins/vuetify.js', mode: 'client'},
+    '~/assets/js/main.js',
+    {src: 'plugins/owl.js', ssr: false}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -36,6 +37,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/fontawesome',
+    '@nuxtjs/vuetify',
   ],
   fontawesome: {
     component: 'fa',
