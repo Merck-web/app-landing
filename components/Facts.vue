@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container ">
     <div class="row facts">
       <div class="imgBox"><FactsImgBox /></div>
       <div class="factsBox"><FactsBox /></div>
@@ -7,6 +7,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
+
 .facts {
   padding: 50px 0 50px 90px;
   min-height: 100vh;
