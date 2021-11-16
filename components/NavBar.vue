@@ -49,7 +49,6 @@ export default {
   padding-top: 35px;
 }
 .row {
-
   justify-content: space-between;
   align-items: center;
   color: var(--black-000);

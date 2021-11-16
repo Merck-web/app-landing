@@ -23,11 +23,9 @@
  <script>
 export default {
   data() {
-    return {
-    }
+    return {};
   },
-  methods: {
-  }
+  methods: {},
 };
 </script>
 <style lang="scss" scoped>
@@ -55,8 +53,8 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 270px;
-padding-left: 20px;
+    max-width: 320px;
+    padding-left: 20px;
     .download {
       button {
         padding: 20px 30px;
@@ -107,6 +105,11 @@ padding-left: 20px;
   100% {
     transform: scale(0.94);
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@media (max-width: 800px) {
+  .text{
+    margin-top: -100px;
   }
 }
 </style>

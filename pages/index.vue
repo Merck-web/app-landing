@@ -2,6 +2,7 @@
   <div class="container">
     <div class="ave">
       <Avetures />
+      <Facts />
     </div>
   </div>
 </template>

@@ -68,6 +68,7 @@ export default {
   padding: 0 20px 10px;
 }
 .stickyNav {
+  padding-bottom: 20px;
   background-color: var(--maincolor);
   transition:var(--transition);
 }
