@@ -7,12 +7,14 @@
     </div>
     <div class="facts-section"><Facts /></div>
     <AppScreen />
-    <div
-      class="background"
-      :style="{ backgroundImage: `url(${backgroundUrl})` }"
-    >
-    <div class="bg-opacity"></div>
-      <DownloadApp />
+    <div class="download">
+      <div
+        class="background"
+        :style="{ backgroundImage: `url(${backgroundUrl})` }"
+      >
+        <DownloadApp />
+      </div>
+      <div class="bg-opacity"></div>
     </div>
   </div>
 </template>
@@ -32,20 +34,16 @@ export default {
 .facts-section {
   background-color: var(--black-100);
 }
-.background {
-  padding: 50px 0;
-  min-height: 100vh;
-  align-items: center;
+.download {
   position: relative;
 }
-.bg-opacity{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: var(--maincolor);
-  opacity: 0.7;
-  z-index: 100;
+.background {
+  padding: 50px 0;
+  background-size: auto 200%;
+  background-repeat: no-repeat;
+  background-position: 46% -20px;
+  align-items: center;
+  position: relative;
+  box-shadow: inset 0 0 0 200vw rgba($color: #7956fe, $alpha: 0.7);
 }
 </style>

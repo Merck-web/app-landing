@@ -16,8 +16,8 @@
   h1 {
     padding-bottom: 40px;
     text-transform: capitalize;
-    span{
-        color: var(--maincolor);
+    span {
+      color: var(--maincolor);
     }
   }
   p {
