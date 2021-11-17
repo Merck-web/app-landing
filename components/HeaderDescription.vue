@@ -107,6 +107,12 @@ export default {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
+@media (max-width: 900px) {
+ .group-btn{
+   width: 500px;
+   padding: 0 15px;
+ }
+}
 @media (max-width: 800px) {
   .text{
     margin-top: -100px;

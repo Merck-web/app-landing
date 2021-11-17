@@ -5,13 +5,15 @@
         <div class="number">
           <p>{{ step.number }}</p>
         </div>
-        <div class="name">
-          <p>{{ step.name }}</p>
-        </div>
-        <div class="desc">
-          <p>
-            {{ step.description }}
-          </p>
+        <div class="hover">
+          <div class="name">
+            <p>{{ step.name }}</p>
+          </div>
+          <div class="desc">
+            <p>
+              {{ step.description }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -78,6 +80,7 @@ export default {
     border-radius: 50%;
     color: #fff;
     margin-bottom: 40px;
+    box-shadow: var(--shadow-black-100);
   }
   .name {
     text-transform: capitalize;
@@ -90,11 +93,8 @@ export default {
     padding-bottom: 140px;
     cursor: pointer;
   }
-  .name:hover,
-  .desc:hover {
-    &.number {
-      background-color: red !important; //вопрос
-    }
+  .hover:hover .number {
+    background-color: #fff;
   }
 }
 
@@ -125,7 +125,7 @@ export default {
 @media (max-width: 600px) {
   .steps {
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     padding-bottom: 140px;
     .card {
       align-items: flex-start;
@@ -142,7 +142,7 @@ export default {
     .desc {
       width: 100%;
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       text-align: left;
       padding-left: 100px;
       margin-top: 10px;
@@ -159,7 +159,12 @@ export default {
 }
 @media (max-width: 400px) {
   .steps::before {
-    height: calc(100% - 420px);
+    height: calc(100% - 390px);
+  }
+}
+@media (max-width: 280px) {
+  .steps::before {
+    height: calc(100% - 500px);
   }
 }
 </style>

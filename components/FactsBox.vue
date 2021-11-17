@@ -25,4 +25,9 @@
     color: var(--black-400);
   }
 }
+@media (max-width: 900px) {
+h1{
+  text-align: center;
+}
+}
 </style>

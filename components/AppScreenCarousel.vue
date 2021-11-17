@@ -55,6 +55,7 @@ export default {
 .screen {
   width: 250px;
   max-height: 525px;
+  cursor: pointer;
 }
 @media (max-width: 650px) {
   .screen {

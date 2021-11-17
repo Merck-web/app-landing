@@ -9,7 +9,6 @@
   margin: 0 auto;
   max-width: 1120px;
   width: 100%;
-  min-height: 100vh;
   align-items: center;
   padding: 50px 0;
   p {

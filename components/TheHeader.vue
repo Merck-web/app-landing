@@ -16,7 +16,7 @@
       <div class="efect-3"><fa icon="plus" /></div>
     </div>
     <div @openModal1="openModal()" v-if="modalWindow" class="modal-window">
-      <ModalHeader @openModal1="openModal"/>
+      <ModalHeader @openModal1="openModal" />
     </div>
   </div>
 </template>
@@ -33,9 +33,9 @@ export default {
       this.modalWindow = !this.modalWindow;
       this.navModalWindow = !this.navModalWindow;
       if (this.modalWindow === true) {
-        document.body.style.overflowY = "hidden";
+        document.body.style.overflow = "hidden";
       } else {
-        document.body.style.overflowY = "auto";
+        document.body.style.overflow = "auto";
       }
     },
     stickyNav() {
@@ -49,13 +49,13 @@ export default {
     },
   },
   mounted() {
-  window.onload = () => {
-    console.log('loaded')
-      document.querySelector('body').onscroll = () => {
-      this.stickyNav()
-    }
-  }
-  }
+    window.onload = () => {
+      console.log("loaded");
+      document.querySelector("body").onscroll = () => {
+        this.stickyNav();
+      };
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -70,7 +70,7 @@ export default {
 .stickyNav {
   padding-bottom: 20px;
   background-color: var(--maincolor);
-  transition:var(--transition);
+  transition: var(--transition);
 }
 .wrapper {
   padding-bottom: 220px;
@@ -88,7 +88,7 @@ export default {
       width: 30px;
       height: 25px;
       position: absolute;
-      bottom: 33%;
+      bottom: 10%;
       left: 6%;
       color: #07c9bf;
       animation: rotate_01 10s linear infinite;
@@ -99,8 +99,8 @@ export default {
     }
     .efect-2 {
       position: absolute;
-      top: 16%;
-      left: 18%;
+      top: 50%;
+      left: 80%;
       color: #f2ad13;
       width: 25px;
       height: 25px;
@@ -149,8 +149,11 @@ export default {
   .wrapper {
     border-radius: 0 0 0 0;
     .effects {
-      .efect-1 {
-        bottom: 53%;
+      .efect-1{
+        bottom: 4%;
+      }
+      .efect-2 {
+        left: 90%;
       }
     }
   }

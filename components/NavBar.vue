@@ -44,7 +44,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
 .wrapper-nav {
   padding-top: 35px;
 }
@@ -80,7 +79,6 @@ export default {
     cursor: pointer;
     line-height: 32px;
     font-size: 26px;
-    padding-left: 40px;
     svg {
       display: none;
     }
