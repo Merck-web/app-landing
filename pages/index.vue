@@ -16,6 +16,9 @@
       </div>
       <div class="bg-opacity"></div>
     </div>
+    <div class="how__to">
+      <HowItWork />
+    </div>
   </div>
 </template>
 
