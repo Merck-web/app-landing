@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="facts-section"><Facts /></div>
-    <AppScreen />
+    <div class="app"><AppScreen /></div>
     <div class="download">
       <div
         class="background"
@@ -24,6 +24,9 @@
     </div>
     <div class="pricing">
       <Pricing />
+    </div>
+    <div class="team">
+      <Team />
     </div>
   </div>
 </template>
@@ -59,6 +62,10 @@ export default {
   background-color: var(--black-100);
   padding: 85px 130px;
 }
+.team {
+  background-color: var(--black-100);
+  padding: 85px 130px;
+}
 @media (max-width: 1000px) {
   .what__say {
     .owl-theme .owl-nav.disabled + .owl-dots {
@@ -76,6 +83,11 @@ export default {
   }
   .testimonial {
     padding: 30px 5px;
+  }
+}
+@media (max-width: 1070px) {
+  .team {
+    padding: 85px 0;
   }
 }
 </style>

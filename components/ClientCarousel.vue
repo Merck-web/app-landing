@@ -83,10 +83,15 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.client__carousel{
+  width: 100%;
+  height: 100%;
+}
 .mr {
   margin-right: 100px;
 }
 .testimonial {
+  margin: 15px;
   padding: 30px 40px;
   box-shadow: var(--shadow-black-300);
   display: flex;
@@ -153,9 +158,16 @@ export default {
     }
   }
 }
-@media (max-width: 573px) {
+@media (max-width: 956px) {
   .testimonial {
     padding: 20px 120px;
+  }
+}
+@media (max-width: 450px) {
+  .testimonial {
+    padding: 20px 0;
+    width: 85vw;
+    min-width: 85vw;
   }
 }
 </style>

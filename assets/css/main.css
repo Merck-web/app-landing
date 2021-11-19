@@ -62,15 +62,22 @@ button {
     margin-top: 0;
     padding-top: 60px;
     padding-bottom: 90px;
-    /* margin-left: 40px;
-    text-align: left; */
 }
 @media (max-width: 1000px) {
+    .team .owl-theme .owl-nav.disabled + .owl-dots,
     .what__say .owl-theme .owl-nav.disabled + .owl-dots {
         margin-top: 0;
         padding-top: 60px;
         padding-bottom: 90px;
         margin-left: 80px;
         text-align: left;
+    }
+}
+@media (max-width: 640px) {
+    .app .owl-item,
+    .ave .owl-item{
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
 }

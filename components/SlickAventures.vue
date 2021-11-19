@@ -86,6 +86,7 @@ export default {
   height: 100%;
 }
 .card {
+  margin: 15px;
   position: relative;
   width: 350px;
   padding: 40px;
@@ -141,7 +142,7 @@ export default {
 @media (max-width: 440px) {
   .card{
     width: 300px;
-    height: 400px;
+    height: 450px;
     padding-right: 50px;
     padding-left: 50px;
   }
