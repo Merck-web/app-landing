@@ -22,6 +22,9 @@
     <div class="what__say">
       <ClientSay />
     </div>
+    <div class="pricing">
+      <Pricing />
+    </div>
   </div>
 </template>
 
