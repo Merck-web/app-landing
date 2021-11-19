@@ -145,6 +145,15 @@ export default {
     padding-bottom: 100px !important;
   }
 }
+@media (min-width: 1024px) {
+  .wrapper {
+    .effects {
+      .efect-2 {
+        left: 97%;
+      }
+    }
+  }
+}
 @media (max-width: 537px) {
   .wrapper {
     border-radius: 0 0 0 0;

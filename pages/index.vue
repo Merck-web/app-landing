@@ -19,6 +19,9 @@
     <div class="how__to">
       <HowItWork />
     </div>
+    <div class="what__say">
+      <ClientSay />
+    </div>
   </div>
 </template>
 
@@ -48,5 +51,28 @@ export default {
   align-items: center;
   position: relative;
   box-shadow: inset 0 0 0 200vw rgba($color: #7956fe, $alpha: 0.7);
+}
+.what__say {
+  background-color: var(--black-100);
+  padding: 85px 130px;
+}
+@media (max-width: 1000px) {
+  .what__say {
+    .owl-theme .owl-nav.disabled + .owl-dots {
+      margin-top: 0;
+      padding-top: 60px;
+      padding-bottom: 90px;
+      margin-left: 40px;
+      text-align: left;
+    }
+  }
+}
+@media (max-width: 573px) {
+  .what__say {
+    padding: 0 calc(80% - 360px);
+  }
+  .testimonial {
+    padding: 30px 5px;
+  }
 }
 </style>
