@@ -26,12 +26,8 @@
               <p class="com">{{ testimonial.comment }}</p>
               <p class="name">{{ testimonial.name }}</p>
               <p class="work">{{ testimonial.work }}</p>
-              <div class="star_box">
-                <div><img src="img/icons/star.svg" alt="otziv" /></div>
-                <div><img src="img/icons/star.svg" alt="otziv" /></div>
-                <div><img src="img/icons/star.svg" alt="otziv" /></div>
-                <div><img src="img/icons/star.svg" alt="otziv" /></div>
-                <div><img src="img/icons/star.svg" alt="otziv" /></div>
+              <div class="star">
+                <Stars :count="testimonial.star" />
               </div>
             </div>
           </carousel>
@@ -59,7 +55,7 @@ export default {
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nobis veritatis eaque.",
           name: "Name Client",
           work: "UI Designer",
-          star: "5",
+          star: "4",
         },
         {
           imgId: "img/testimonial/3.jpg",
@@ -75,7 +71,7 @@ export default {
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nobis veritatis eaque.",
           name: "Name Client",
           work: "UI Designer",
-          star: "5",
+          star: "4",
         },
       ],
     };
@@ -83,7 +79,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.client__carousel{
+.client__carousel {
   width: 100%;
   height: 100%;
 }
@@ -100,12 +96,37 @@ export default {
   align-items: center;
   text-align: center;
   max-width: 360px;
+  .img {
+    position: relative;
+  }
   .face {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     border: 4px solid var(--maincolor);
-    position: relative;
+  }
+  .img::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--maincolor);
+    border-radius: 50%;
+    left: 85%;
+    top: 25%;
+    z-index: 0;
+  }
+  .img::before {
+    content: "";
+    position: absolute;
+    background-image: url(../static/img/icons/viruses-solid.svg);
+    background-size: 80% 80%;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    left: 85%;
+    top: 25%;
+    z-index: 1;
   }
   .img {
     padding-bottom: 40px;
@@ -127,25 +148,6 @@ export default {
     color: var(--black-400);
     font-weight: 300;
   }
-  //   .after {
-  //     position: absolute;
-  //     width: 30px;
-  //     height: 30px;
-  //     background-color: var(--maincolor);
-  //     border-radius: 50%;
-  //     left: 26%;
-  //     top: 20%;
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     img {
-  //       width: 20px;
-  //       height: 20px;
-  //       line-height: 30px;
-  //       filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(339deg)
-  //         brightness(99%) contrast(105%);
-  //     }
-  //   }
   .star_box {
     display: flex;
     justify-content: space-between;

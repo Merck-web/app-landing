@@ -81,6 +81,7 @@ export default {
     color: #fff;
     margin-bottom: 40px;
     box-shadow: var(--shadow-black-100);
+    transition: var(--transition);
   }
   .name {
     text-transform: capitalize;
@@ -93,8 +94,11 @@ export default {
     padding-bottom: 140px;
     cursor: pointer;
   }
-  .hover:hover .number {
-    background-color: #fff;
+}
+.card:hover {
+  .number {
+    background-color: var(--color-1);
+    transition: var(--transition);
   }
 }
 

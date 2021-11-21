@@ -28,6 +28,9 @@
     <div class="team">
       <Team />
     </div>
+    <div class="faq">
+      <FAQ />
+    </div>
   </div>
 </template>
 

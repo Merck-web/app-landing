@@ -1,3 +1,26 @@
-.team{
-    background:red !important;
+/* аккордеон */
+.v-application--wrap{
+    min-height: auto !important;
 }
+.v-expansion-panel--active {
+    background-color: var(--maincolor) !important;
+    color: white !important;
+}
+.v-expansion-panel--active .v-expansion-panel-content__wrap {
+    background-color: var(--black-100) !important;
+}
+.mdi-chevron-down::before {
+    content: "";
+    background-image: url(../../static/img/icons/plus-solid.svg);
+    width: 14px;
+    height: 14px;
+    filter: invert(32%) sepia(0%) saturate(1%) hue-rotate(173deg) brightness(95%) contrast(85%);
+}
+.v-expansion-panel--active .mdi-chevron-down::before {
+    content: "";
+    background-image: url(../../static/img/icons/minus-solid.svg);
+    width: 14px;
+    height: 14px;
+    filter: invert(100%) sepia(13%) saturate(0%) hue-rotate(283deg) brightness(104%) contrast(101%);
+}
+/* аккордеон */
