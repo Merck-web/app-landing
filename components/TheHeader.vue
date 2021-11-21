@@ -65,10 +65,10 @@ export default {
   top: 0;
   z-index: 100;
   width: 100%;
-  padding: 0 20px 10px;
+  padding: 0 30px 10px;
 }
 .stickyNav {
-  padding-bottom: 20px;
+  padding-bottom: 35px;
   background-color: var(--maincolor);
   transition: var(--transition);
 }

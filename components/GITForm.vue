@@ -95,6 +95,7 @@ export default {
       text-transform: capitalize;
       font-size: 16px;
       font-weight: 600;
+      box-shadow: none;
     }
   }
 }
