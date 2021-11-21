@@ -49,6 +49,7 @@ button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    box-shadow: var(--shadow-black-100);
 }
 .owl-theme .owl-dots .owl-dot.active span {
     background: var(--black-100) !important;

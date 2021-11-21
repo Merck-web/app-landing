@@ -31,6 +31,9 @@
     <div class="faq">
       <FAQ />
     </div>
+    <div class="get">
+      <GetInTouch />
+    </div>
   </div>
 </template>
 
@@ -69,6 +72,15 @@ export default {
   background-color: var(--black-100);
   padding: 85px 130px;
 }
+.get {
+  background-color: var(--black-100);
+  padding: 85px 15px;
+}
+@media (max-width: 1070px) {
+  .team {
+    padding: 85px 0;
+  }
+}
 @media (max-width: 1000px) {
   .what__say {
     .owl-theme .owl-nav.disabled + .owl-dots {
@@ -80,17 +92,15 @@ export default {
     }
   }
 }
+@media (max-width: 929px) {
+
+}
 @media (max-width: 573px) {
   .what__say {
     padding: 0 calc(80% - 360px);
   }
   .testimonial {
     padding: 30px 5px;
-  }
-}
-@media (max-width: 1070px) {
-  .team {
-    padding: 85px 0;
   }
 }
 </style>
