@@ -31,7 +31,7 @@ export default {
       window.localStorage.setItem("moon", this.moon);
     },
   },
-  mounted() {
+  beforeMount() {
     if (localStorage.getItem("sun") == true) {
       document.body.classList.remove("dark");
       this.sun = true;
