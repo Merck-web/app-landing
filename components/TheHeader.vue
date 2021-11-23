@@ -14,6 +14,9 @@
       <div class="efect-1"><fa icon="circle-notch" /></div>
       <div class="efect-2"><fa icon="plus" /></div>
       <div class="efect-3"><fa icon="plus" /></div>
+      <div class="dark">
+        <div class="dark-theme"><DarkTheme /></div>
+      </div>
     </div>
     <div @openModal1="openModal()" v-if="modalWindow" class="modal-window">
       <ModalHeader @openModal1="openModal" />
@@ -69,14 +72,15 @@ export default {
 }
 .stickyNav {
   padding-bottom: 35px;
-  background-color: var(--maincolor);
+  background-color: var(--mainpage);
   transition: var(--transition);
 }
 .wrapper {
   padding-bottom: 220px;
-  background: var(--maincolor);
-  border-radius: 0 0 200px 0;
+  background: var(--mainpage);
+  border-radius: var(--borderMainBlock);
   position: relative;
+  transition: var(--transition);
   .content {
     display: flex;
     justify-content: space-between;
@@ -116,10 +120,27 @@ export default {
       width: 30px;
       height: 30px;
       color: #bdadff;
-      svg {
-        width: 100%;
-        height: 100%;
-      }
+    }
+    .dark {
+      box-shadow: var(--outer-shadow);
+    }
+    .dark-theme {
+      position: fixed;
+      top: 20%;
+      right: 1%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 20px;
+      background-color: var(--maincolor);
+      box-shadow: var(--shadow-black-300);
+      border-radius: 50%;
+      z-index: 1000;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -158,7 +179,7 @@ export default {
   .wrapper {
     border-radius: 0 0 0 0;
     .effects {
-      .efect-1{
+      .efect-1 {
         bottom: 4%;
       }
       .efect-2 {

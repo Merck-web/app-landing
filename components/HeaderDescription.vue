@@ -38,13 +38,13 @@ export default {
       line-height: 34px;
       font-weight: bold;
       font-size: 34px;
-      color: var(--black-000);
+      color: white;
       margin-bottom: 40px;
     }
     h2 {
       line-height: 25px;
       font-size: 15px;
-      color: var(--black-000);
+      color: white;
       font-weight: normal;
       margin-bottom: 43px;
     }

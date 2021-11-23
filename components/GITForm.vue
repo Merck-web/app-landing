@@ -45,6 +45,7 @@ export default {
     }
     input {
       width: 350px;
+      transition: var(--transition);
     }
   }
   .row:nth-child(2),
@@ -53,11 +54,13 @@ export default {
     width: calc(100% + 25px);
     input {
       width: calc(100% + 25px);
+      transition: var(--transition);
     }
     textarea {
       width: calc(100% + 25px);
       height: 140px;
       resize: none;
+      transition: var(--transition);
     }
   }
   .input-box {

@@ -51,6 +51,7 @@ export default {
     font-size: 18px;
     font-weight: 600;
     padding-bottom: 50px;
+      color: var(--title-text);
   }
   .text-content {
     position: relative;
@@ -58,6 +59,7 @@ export default {
       text-transform: capitalize;
       font-size: 16px;
       font-weight: 500;
+        color: var(--title-text);
       padding-bottom: 10px;
     }
     p + p {

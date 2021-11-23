@@ -89,10 +89,12 @@ export default {
     font-size: 20px;
     margin-bottom: 30px;
     cursor: pointer;
+    color: var(--title-text);
   }
   .desc {
     padding-bottom: 140px;
     cursor: pointer;
+    color: var(--black-400);
   }
 }
 .card:hover {

@@ -8,21 +8,6 @@ body {
     overflow-x: hidden;
     background-color: white;
 }
-:root {
-    --maincolor: #7956fe;
-    --color-1: #e91e63;
-    --color-2: #f5ae10;
-    --color-3: #09d69c;
-    --bg-dark: #2b2c2f;
-    --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
-    --black-900: #000000;
-    --black-400: #555555;
-    --black-100: #f7f7f7;
-    --black-000: #ffffff;
-    --black-alpha-100: rgba(0, 0, 0, 0.05);
-    --transition: all 0.7s ease-in-out;
-}
 *,
 ::after,
 ::before {
@@ -49,13 +34,12 @@ button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    box-shadow: var(--shadow-black-100);
 }
 .owl-theme .owl-dots .owl-dot.active span {
-    background: var(--black-100) !important;
+    background: #7956fe !important;
 }
 .owl-theme .owl-dots .owl-dot span {
-    background: var(--maincolor) !important;
+    background: var(--dots) !important;
     width: 40px !important;
     height: 10px !important;
 }

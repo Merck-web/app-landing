@@ -49,8 +49,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.app-screen-wrap-carousel{
-    padding: 0 15px;
+.app-screen-wrap-carousel {
+  padding: 0 15px;
 }
 .screen {
   width: 250px;
@@ -64,8 +64,8 @@ export default {
     align-items: center;
     text-align: center;
   }
-  .owl-carousel .owl-stage-outer{
-      width: 320px !important;
+  .owl-carousel .owl-stage-outer {
+    width: 320px !important;
   }
 }
 </style>

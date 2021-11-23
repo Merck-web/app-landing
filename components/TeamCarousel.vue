@@ -83,6 +83,7 @@ export default {
     padding-bottom: 20px;
     text-transform: capitalize;
     font-weight: 600;
+      color: var(--title-text);
   }
   .work {
     padding-bottom: 20px;

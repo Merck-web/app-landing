@@ -50,7 +50,7 @@ export default {
 .row {
   justify-content: space-between;
   align-items: center;
-  color: var(--black-000);
+  color: white;
   padding: 0 5px;
   ul {
     display: flex;
@@ -70,7 +70,7 @@ export default {
           height: 2px;
           left: 0;
           bottom: 0;
-          background-color: var(--black-100);
+          background-color:white;
         }
       }
     }

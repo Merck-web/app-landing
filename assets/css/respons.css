@@ -1,10 +1,11 @@
 /* аккордеон */
-.v-application--wrap{
+.v-application--wrap {
     min-height: auto !important;
 }
 .v-expansion-panel--active {
     background-color: var(--maincolor) !important;
     color: white !important;
+    transition:var(--transition) !important;
 }
 .v-expansion-panel--active .v-expansion-panel-content__wrap {
     background-color: var(--black-100) !important;
@@ -22,5 +23,15 @@
     width: 14px;
     height: 14px;
     filter: invert(100%) sepia(13%) saturate(0%) hue-rotate(283deg) brightness(104%) contrast(101%);
+}
+.v-application--is-ltr .v-expansion-panel-header {
+    background-color: var(--acordeon) !important;
+}
+.v-expansion-panels {
+    background-color: var(--acordeon) !important;
+}
+.wrap-accordeon .header[data-v-d02800ae] {
+    color: var(--title-text) !important;
+    transition:var(--transition) !important;
 }
 /* аккордеон */

@@ -84,16 +84,22 @@ export default {
 .slick-wrapper {
   width: 100%;
   height: 100%;
+  h1{
+    color: var(--title-text);
+  }
+  p{
+    color:var(--black-400);
+  }
 }
 .card {
   margin: 15px;
   position: relative;
   width: 350px;
-  padding: 40px;
+  padding: 30px;
   height: 300px;
   box-shadow: var(--shadow-black-300);
   text-align: center;
-    cursor: pointer;
+  cursor: pointer;
   svg {
     color: var(--maincolor);
     width: 40px;

@@ -47,9 +47,10 @@ export default {
 }
 .card {
   z-index: 1;
-  background: white;
+  background-color:var(--black-100);
   padding: 30px 40px;
   border-radius: 10px;
+    transition:var(--transition);
   h1 {
     z-index: 1;
     font-weight: 600;
@@ -57,6 +58,7 @@ export default {
     text-transform: capitalize;
     padding-top: 15px;
     padding-bottom: 15px;
+    color: var(--title-text);
   }
   p {
     padding-bottom: 30px;

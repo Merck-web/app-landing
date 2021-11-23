@@ -16,6 +16,7 @@
   h1 {
     padding-bottom: 40px;
     text-transform: capitalize;
+    color: var(--title-text);
     span {
       color: var(--maincolor);
     }

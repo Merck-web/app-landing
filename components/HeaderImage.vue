@@ -23,7 +23,7 @@
 }
 .circle {
   position: absolute;
-  border: 1px solid var(--black-100);
+  border: 1px solid #f7f7f7;
   width: 400px;
   height: 400px;
   top: calc(50% - 200px);

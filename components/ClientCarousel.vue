@@ -141,6 +141,7 @@ export default {
     padding-bottom: 10px;
     font-weight: 600;
     font-size: 18px;
+    color: var(--title-text);
   }
   .work {
     padding-bottom: 20px;

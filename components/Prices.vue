@@ -54,9 +54,10 @@ export default {
     .name {
       font-weight: 800;
       font-size: 20px;
-      border-bottom: 2px solid var(--black-100);
+      border-bottom: 1px solid var(--border-bottom);
       margin-bottom: 17px;
       padding-bottom: 17px;
+        color: var(--title-text);
     }
     .order {
       display: flex;
@@ -85,7 +86,7 @@ export default {
         margin-bottom: 35px;
         text-transform: capitalize;
         padding-bottom: 5px;
-        border-bottom: 2px solid var(--black-100);
+        border-bottom: 1px solid var(--border-bottom);
       }
       li:last-child {
         margin-bottom: 45px;

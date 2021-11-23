@@ -16,6 +16,7 @@ p {
   text-align: center;
   line-height: 30px;
   font-size: 30px;
+  color: var(--title-text);
 }
 span {
   color: var(--maincolor);

@@ -1,0 +1,35 @@
+:root {
+    --maincolor: #7956fe;
+    --mainpage: #7956fe;
+    --color-1: #e91e63;
+    --color-2: #f5ae10;
+    --color-3: #09d69c;
+    --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+    --black-900: #000000;
+    --black-400: #555555;
+    --black-100: #f7f7f7;
+    --black-000: #ffffff;
+    --black-alpha-100: rgba(0, 0, 0, 0.05);
+    --transition: all 0.7s ease-in-out;
+    --shadow-pay: inset 0 0 0 200vw rgba($color: #7956fe, $alpha: 0.7);
+    --borderMainBlock: 0 0 200px 0;
+    --title-text: #000000;
+    --dots: #555555;
+    --acordeon: #ffffff;
+    --border-bottom: #f7f7f7;
+
+}
+
+body.dark {
+    --mainpage: #27282b;
+    --black-000: #27282b;
+    --borderMainBlock: 0 0 0 0;
+    --title-text: #ffffff;
+    --black-400: #7c7c7d;
+    --black-100: #27282b;
+    --shadow-pay: inset 0 0 0 200vw rgba($color: #7956fe, $alpha: 0.7);
+    --dots: #ffffff;
+    --acordeon: #27282b;
+
+}

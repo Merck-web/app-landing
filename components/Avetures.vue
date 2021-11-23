@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="carousel">
-          <SlickAventures />
+        <SlickAventures />
       </div>
     </div>
   </div>
@@ -21,9 +21,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 .title {
-  padding: 90px 0 90px;
+  margin: 90px 0 90px;
   .row {
     justify-content: center;
+    h1{
+      color: var(--title-text);
+    }
     span {
       color: var(--maincolor);
     }
@@ -36,18 +39,17 @@ export default {
   }
 }
 @media (max-width: 440px) {
-.title {
-  .row {
-    h1 {
-      display: block;
-      text-align: center;
-
-    }
-    span {
-      display: block;
-      text-align: center;
+  .title {
+    .row {
+      h1 {
+        display: block;
+        text-align: center;
+      }
+      span {
+        display: block;
+        text-align: center;
+      }
     }
   }
-}
 }
 </style>

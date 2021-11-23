@@ -48,7 +48,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrap-accordeon {
-  // transition: var(--transition) !important;
   width: 100%;
   padding: 0 220px;
   .content {
