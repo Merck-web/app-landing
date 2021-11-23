@@ -31,7 +31,17 @@ export default {
       window.localStorage.setItem("moon", this.moon);
     },
   },
-  mounted() {},
+  mounted() {
+    if (localStorage.getItem("sun") == true) {
+      document.body.classList.remove("dark");
+      this.sun = true;
+      this.moon = false;
+    } else {
+      document.body.classList.add("dark");
+      this.sun = false;
+      this.moon = true;
+    }
+  },
 };
 </script>
 <style lang="scss" scoped>
