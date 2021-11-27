@@ -117,5 +117,8 @@ export default {
   .text{
     margin-top: -100px;
   }
+  .wrapper-header {
+    margin-right: 0;
+  }
 }
 </style>
