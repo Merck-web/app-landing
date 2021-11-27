@@ -95,7 +95,7 @@ export default {
       border-radius: 20px;
       position: fixed;
       top: 10px;
-      right: 45px;
+      right: calc(50% - 250px);
       flex-direction: column;
       display: flex;
       margin: 0 auto;
@@ -128,6 +128,7 @@ export default {
       }
       svg {
         display: flex;
+        z-index: 100;
       }
     }
   }
@@ -136,6 +137,7 @@ export default {
   .row {
     ul {
       width: 300px;
+            right: calc(50% - 150px);
       li {
         &.active {
           &.active:before {

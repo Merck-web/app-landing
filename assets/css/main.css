@@ -60,9 +60,25 @@ button {
 }
 @media (max-width: 640px) {
     .app .owl-item,
-    .ave .owl-item{
+    .ave .owl-item {
         align-items: center;
         display: flex;
         justify-content: center;
     }
+}
+/* Размеры скроллбара */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Трек поле скроллбара */
+::-webkit-scrollbar-track {
+    background: var(--scrollbar);
+    transition: var(--transition);
+}
+/* Ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px #e91e63; 
+    background: #e91e63;
+    transition: var(--transition);
 }

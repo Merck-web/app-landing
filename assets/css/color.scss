@@ -18,7 +18,7 @@
     --dots: #555555;
     --acordeon: #ffffff;
     --border-bottom: #f7f7f7;
-
+    --scrollbar: #000000;
 }
 
 body.dark {
@@ -31,5 +31,5 @@ body.dark {
     --shadow-pay: inset 0 0 0 200vw rgba($color: #7956fe, $alpha: 0.7);
     --dots: #ffffff;
     --acordeon: #27282b;
-
+    --scrollbar: #f7f7f7;
 }

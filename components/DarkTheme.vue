@@ -31,12 +31,12 @@ export default {
       window.localStorage.setItem("moon", this.moon);
     },
   },
-  beforeMount() {
+  mounted() {
     if (localStorage.getItem("sun") == true) {
       document.body.classList.remove("dark");
       this.sun = true;
       this.moon = false;
-    } else {
+    } else if (localStorage.getItem("moon") == true) {
       document.body.classList.add("dark");
       this.sun = false;
       this.moon = true;

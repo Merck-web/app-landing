@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Preloader />
     <TheHeader />
     <Nuxt />
     <TheFooter />

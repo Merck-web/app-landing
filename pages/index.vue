@@ -74,7 +74,11 @@ export default {
   background-position: 46% -20px;
   align-items: center;
   position: relative;
-  box-shadow: var(--shadow-pay);
+  box-shadow: inset 0 0 0 200vw rgba($color: #7956fe, $alpha: 0.7);
+  transition: var(--transition);
+}
+body.dark .background {
+  box-shadow: inset 0 0 0 200vw rgba($color: #252427, $alpha: 0.7);
   transition: var(--transition);
 }
 .what__say {
