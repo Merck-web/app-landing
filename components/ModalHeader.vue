@@ -18,14 +18,6 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {};
-  },
-  methods: {},
-};
-</script>
 <style lang="scss" scoped>
 .modal-wrapper {
   position: fixed;

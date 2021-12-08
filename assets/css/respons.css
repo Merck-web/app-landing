@@ -5,7 +5,7 @@
 .v-expansion-panel--active {
     background-color: var(--maincolor) !important;
     color: white !important;
-    transition:var(--transition) !important;
+    transition: var(--transition) !important;
 }
 .v-expansion-panel--active .v-expansion-panel-content__wrap {
     background-color: var(--black-100) !important;
@@ -32,6 +32,9 @@ body.dark .v-application--is-ltr .v-expansion-panel-header {
 }
 .wrap-accordeon .header[data-v-d02800ae] {
     color: var(--title-text) !important;
-    transition:var(--transition) !important;
+    transition: var(--transition) !important;
+}
+body.dark .wrap-accordeon .header{
+    color: white;
 }
 /* аккордеон */

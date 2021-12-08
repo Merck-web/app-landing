@@ -136,6 +136,9 @@ export default {
     font-size: 14px;
     color: var(--black-400);
     font-weight: 300;
+    line-height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .name {
     padding-bottom: 10px;

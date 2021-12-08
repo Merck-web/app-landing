@@ -73,6 +73,7 @@
       }
       p {
         text-transform: none;
+        line-height: 25px;
       }
     }
     .title {
@@ -118,9 +119,9 @@
     .social {
       margin-bottom: 0;
     }
-        .title {
-          padding-bottom: 20px !important;
-        }
+    .title {
+      padding-bottom: 20px !important;
+    }
   }
 }
 </style>

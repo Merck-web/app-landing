@@ -84,11 +84,13 @@ export default {
 .slick-wrapper {
   width: 100%;
   height: 100%;
-  h1{
+  h1 {
     color: var(--title-text);
   }
-  p{
-    color:var(--black-400);
+  p {
+    color: var(--black-400);
+    line-height: 25px;
+    margin-top: 5px;
   }
 }
 .card {
@@ -146,12 +148,11 @@ export default {
   }
 }
 @media (max-width: 440px) {
-  .card{
+  .card {
     width: 300px;
     height: 450px;
     padding-right: 50px;
     padding-left: 50px;
   }
-  
 }
 </style>

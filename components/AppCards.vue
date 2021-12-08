@@ -47,10 +47,10 @@ export default {
 }
 .card {
   z-index: 1;
-  background-color:var(--black-100);
+  background-color: var(--black-100);
   padding: 30px 40px;
   border-radius: 10px;
-    transition:var(--transition);
+  transition: var(--transition);
   h1 {
     z-index: 1;
     font-weight: 600;
@@ -63,6 +63,7 @@ export default {
   p {
     padding-bottom: 30px;
     color: var(--black-400);
+    line-height: 25px;
   }
   img {
     width: 20px;

@@ -160,17 +160,22 @@ export default {
   .steps::before {
     left: 45px;
     width: 2px;
-    height: calc(100% - 320px);
+    height: calc(103% - 320px);
   }
 }
 @media (max-width: 400px) {
   .steps::before {
-    height: calc(100% - 390px);
+    height: calc(110% - 390px);
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 323px) {
   .steps::before {
-    height: calc(100% - 500px);
+    height: calc(105% - 500px);
+  }
+}
+@media (max-width: 282px) {
+  .steps::before {
+    height: calc(105% - 500px);
   }
 }
 </style>

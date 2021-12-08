@@ -1,10 +1,10 @@
 <template>
   <div class="index">
-    <div class="ave">
+    <div class="ave" id="features">
       <Avetures />
     </div>
     <div class="facts-section"><Facts /></div>
-    <div class="app"><AppScreen /></div>
+    <div class="app" id="screenshots"><AppScreen /></div>
     <div class="download">
       <div
         class="background"
@@ -17,10 +17,10 @@
     <div class="how__to">
       <HowItWork />
     </div>
-    <div class="what__say">
+    <div class="what__say" id="testimonials">
       <ClientSay />
     </div>
-    <div class="pricing">
+    <div class="pricing" id="pricing">
       <Pricing />
     </div>
     <div class="team">
@@ -29,7 +29,7 @@
     <div class="faq">
       <FAQ />
     </div>
-    <div class="get">
+    <div class="get" id="contact">
       <GetInTouch />
     </div>
   </div>

@@ -20,25 +20,29 @@ export default {
   },
   mounted() {
     this.showToogle();
+    const item = document.querySelector("html");
+    item.style.overflow = "hidden";
   },
   methods: {
     showToogle() {
       setTimeout(() => {
         this.show = false;
-      }, 2000);
+        const item = document.querySelector("html");
+        item.style.overflow = "auto";
+      }, 3000);
     },
   },
 };
 </script>
 <style lang="scss" scoped>
 .wrap-preloader {
-  background-color: #1f1f1f;
+  background-color: #000000;
   width: 100%;
   min-height: 100vh;
 }
 .load_box {
   z-index: 100000;
-  background-color: #1f1f1f;
+  background-color: #000000;
   position: fixed;
   top: 0;
   left: 0;
@@ -76,17 +80,17 @@ export default {
 }
 @keyframes loading {
   0% {
-    background-color: #fff;
+    background-color: rgb(216, 211, 211);
     transform: scale(0.1);
     opacity: 0.1;
   }
   50% {
-    background-color: #00a7c2;
+    background-color: #bd0375;
     transform: scale(1);
     opacity: 1;
   }
   100% {
-    background-color: #fff;
+    background-color: rgb(216, 211, 211);
     transform: scale(0.1);
     opacity: 0.1;
   }

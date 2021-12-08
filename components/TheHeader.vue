@@ -36,9 +36,11 @@ export default {
       this.modalWindow = !this.modalWindow;
       this.navModalWindow = !this.navModalWindow;
       if (this.modalWindow === true) {
-        document.body.style.overflow = "hidden";
+        const html = document.querySelector("html");
+        html.style.overflow = "hidden";
       } else {
-        document.body.style.overflow = "auto";
+        const html = document.querySelector("html");
+        html.style.overflow = "auto";
       }
     },
     stickyNav() {

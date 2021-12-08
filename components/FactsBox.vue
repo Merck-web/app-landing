@@ -24,6 +24,7 @@
   p {
     padding-bottom: 50px;
     color: var(--black-400);
+        line-height: 25px;
   }
 }
 @media (max-width: 900px) {

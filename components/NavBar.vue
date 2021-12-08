@@ -11,7 +11,7 @@
           v-for="link in links"
           :key="link.id"
         >
-          {{ link.link }}
+          <a :href="link.anchor">{{ link.link }}</a>
         </li>
       </ul>
     </div>
@@ -22,12 +22,12 @@ export default {
   data() {
     return {
       links: [
-        { id: 1, link: "Home" },
-        { id: 2, link: "Features" },
-        { id: 3, link: "Screenshots" },
-        { id: 4, link: "Testimonials" },
-        { id: 5, link: "Pricing" },
-        { id: 6, link: "Contact" },
+        { id: 1, link: "Home", anchor: "#home" },
+        { id: 2, link: "Features", anchor: "#features" },
+        { id: 3, link: "Screenshots", anchor: "#screenshots" },
+        { id: 4, link: "Testimonials", anchor: "#testimonials" },
+        { id: 5, link: "Pricing", anchor: "#pricing" },
+        { id: 6, link: "Contact", anchor: "#contact" },
       ],
       current: 0,
       activeUl: false,
@@ -40,6 +40,7 @@ export default {
   },
   mounted() {
     this.current = this.links[0];
+    // this.handleSCroll();
   },
 };
 </script>
@@ -70,7 +71,7 @@ export default {
           height: 2px;
           left: 0;
           bottom: 0;
-          background-color:white;
+          background-color: white;
         }
       }
     }
@@ -79,6 +80,7 @@ export default {
     cursor: pointer;
     line-height: 32px;
     font-size: 26px;
+    font-weight: bold;
     svg {
       display: none;
     }
@@ -137,7 +139,7 @@ export default {
   .row {
     ul {
       width: 300px;
-            right: calc(50% - 150px);
+      right: calc(50% - 150px);
       li {
         &.active {
           &.active:before {

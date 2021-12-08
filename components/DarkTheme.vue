@@ -32,11 +32,16 @@ export default {
     },
   },
   mounted() {
-    if (localStorage.getItem("sun") == true) {
+    const body = document.querySelector("body");
+    window.addEventListener("unload", () => {
+      localStorage.setItem("sun", body.classList.contains("dark") ? 0 : 1);
+      localStorage.setItem("moon", body.classList.contains("dark") ? 1 : 0);
+    });
+    if (localStorage.getItem("sun") == 1) {
       document.body.classList.remove("dark");
       this.sun = true;
       this.moon = false;
-    } else if (localStorage.getItem("moon") == true) {
+    } else if (localStorage.getItem("moon") == 1) {
       document.body.classList.add("dark");
       this.sun = false;
       this.moon = true;
