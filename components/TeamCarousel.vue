@@ -34,27 +34,27 @@ export default {
     return {
       teams: [
         {
-          imgId: "img/team/1.jpg",
+          imgId: "img/team/1.webp",
           name: "Name teammate",
           work: "UI Designer",
         },
         {
-          imgId: "img/team/2.jpg",
+          imgId: "img/team/2.webp",
           name: "Name teammate",
           work: "UI Designer",
         },
         {
-          imgId: "img/team/3.jpg",
+          imgId: "img/team/3.webp",
           name: "Name teammate",
           work: "UI Designer",
         },
         {
-          imgId: "img/team/4.jpg",
+          imgId: "img/team/4.webp",
           name: "Name teammate",
           work: "UI Designer",
         },
         {
-          imgId: "img/team/5.jpg",
+          imgId: "img/team/5.webp",
           name: "Name teammate",
           work: "UI Designer",
         },

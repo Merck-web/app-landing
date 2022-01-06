@@ -1,6 +1,6 @@
 <template>
   <div class="imgBox-wrap">
-    <img src="img/app-screenshots/2.png" />
+    <img src="img/app-screenshots/2.webp" />
   </div>
 </template>
 <style lang="scss" scoped>

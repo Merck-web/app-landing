@@ -42,7 +42,7 @@ export default {
     return {
       testimonials: [
         {
-          imgId: "img/testimonial/1.jpg",
+          imgId: "img/testimonial/1.webp",
           comment:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nobis veritatis eaque.",
           name: "Name Client",
@@ -50,7 +50,7 @@ export default {
           star: "5",
         },
         {
-          imgId: "img/testimonial/2.jpg",
+          imgId: "img/testimonial/2.webp",
           comment:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nobis veritatis eaque.",
           name: "Name Client",
@@ -58,7 +58,7 @@ export default {
           star: "4",
         },
         {
-          imgId: "img/testimonial/3.jpg",
+          imgId: "img/testimonial/3.webp",
           comment:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nobis veritatis eaque.",
           name: "Name Client",
@@ -66,7 +66,7 @@ export default {
           star: "5",
         },
         {
-          imgId: "img/testimonial/4.jpg",
+          imgId: "img/testimonial/4.webp",
           comment:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nobis veritatis eaque.",
           name: "Name Client",

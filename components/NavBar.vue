@@ -1,5 +1,5 @@
 <template class="nav">
-  <div class="wrapper-nav">
+  <div ref="msg_wrapper" class="wrapper-nav">
     <div class="row">
       <div class="name-app">
         <p>Your App <fa @click="active" icon="hamburger" /></p>
@@ -31,16 +31,41 @@ export default {
       ],
       current: 0,
       activeUl: false,
+      windowTop: 0,
     };
   },
   methods: {
     active() {
       this.activeUl = !this.activeUl;
     },
+    onScroll(e) {
+      this.windowTop = e.target.documentElement.scrollTop;
+      console.log({ top: this.windowTop });
+    },
+    handlerActiveClass() {
+      if (this.windowTop < 944) {
+        this.current = this.links[0];
+      } else if (this.windowTop < 3330) {
+        this.current = this.links[1];
+      } else if (this.windowTop < 5498) {
+        this.current = this.links[2];
+      } else if (this.windowTop < 6519) {
+        this.current = this.links[3];
+      } else if (this.windowTop < 8829) {
+        this.current = this.links[4];
+      } else if (this.windowTop > 8829) {
+        this.current = this.links[5];
+      }
+    },
   },
   mounted() {
     this.current = this.links[0];
-    // this.handleSCroll();
+    window.addEventListener("scroll", this.onScroll);
+    window.addEventListener("scroll", this.handlerActiveClass);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll);
+    window.removeEventListener("scroll", this.handlerActiveClass);
   },
 };
 </script>

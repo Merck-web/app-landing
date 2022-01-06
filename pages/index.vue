@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import backgroundUrl from "static/img/download-app-bg.jpg";
+import backgroundUrl from "static/img/download-app-bg.webp";
 export default {
   data() {
     return {

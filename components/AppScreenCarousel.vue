@@ -26,22 +26,22 @@ export default {
     return {
       screens: [
         {
-          imgId: "img/app-screenshots/1.png",
+          imgId: "img/app-screenshots/1.webp",
         },
         {
-          imgId: "img/app-screenshots/2.png",
+          imgId: "img/app-screenshots/2.webp",
         },
         {
-          imgId: "img/app-screenshots/3.png",
+          imgId: "img/app-screenshots/3.webp",
         },
         {
-          imgId: "img/app-screenshots/3.png",
+          imgId: "img/app-screenshots/3.webp",
         },
         {
-          imgId: "img/app-screenshots/2.png",
+          imgId: "img/app-screenshots/2.webp",
         },
         {
-          imgId: "img/app-screenshots/1.png",
+          imgId: "img/app-screenshots/1.webp",
         },
       ],
     };

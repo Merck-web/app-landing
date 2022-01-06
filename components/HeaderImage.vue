@@ -2,7 +2,7 @@
   <div class="wrapper-header">
     <div class="box-image">
       <div class="circle"></div>
-      <img src="img/app-screenshots/1.png" />
+      <img src="img/app-screenshots/1.webp" />
     </div>
   </div>
 </template>
