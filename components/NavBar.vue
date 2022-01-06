@@ -23,11 +23,36 @@ export default {
     return {
       links: [
         { id: 1, link: "Home", anchor: "#home" },
-        { id: 2, link: "Features", anchor: "#features" },
-        { id: 3, link: "Screenshots", anchor: "#screenshots" },
-        { id: 4, link: "Testimonials", anchor: "#testimonials" },
-        { id: 5, link: "Pricing", anchor: "#pricing" },
-        { id: 6, link: "Contact", anchor: "#contact" },
+        {
+          id: 2,
+          link: "Features",
+          anchor: "#beforeFeatures",
+          offSetTop: "beforeFeatures",
+        },
+        {
+          id: 3,
+          link: "Screenshots",
+          anchor: "#beforeScreenshots",
+          offSetTop: "beforeScreenshots",
+        },
+        {
+          id: 4,
+          link: "Testimonials",
+          anchor: "#beforeTestimonials",
+          offSetTop: "beforeTestimonials",
+        },
+        {
+          id: 5,
+          link: "Pricing",
+          anchor: "#beforePricing",
+          offSetTop: "beforePricing",
+        },
+        {
+          id: 6,
+          link: "Contact",
+          anchor: "#beforeContact",
+          offSetTop: "beforeContact",
+        },
       ],
       current: 0,
       activeUl: false,
@@ -40,20 +65,31 @@ export default {
     },
     onScroll(e) {
       this.windowTop = e.target.documentElement.scrollTop;
-      console.log({ top: this.windowTop });
+      // console.log({ top: this.windowTop });
     },
     handlerActiveClass() {
-      if (this.windowTop < 944) {
+      const screenHeight = window.screen.height;
+      var home = document.getElementById("beforeHome").getBoundingClientRect();
+      var features = document.getElementById("beforeFeatures").getBoundingClientRect();
+      var screenshots =
+        document.getElementById("beforeScreenshots").getBoundingClientRect();
+      var testimonials =
+        document.getElementById("beforeTestimonials").getBoundingClientRect();;
+      var pricing = document.getElementById("beforePricing").getBoundingClientRect();
+      var contact = document.getElementById("beforeContact").getBoundingClientRect();
+      // console.log( screenHeight)
+      //       console.log( home.y, features.y)
+      if (screenHeight > home.y && screenHeight/2 < features.y) {
         this.current = this.links[0];
-      } else if (this.windowTop < 2509) {
+      } else if (screenHeight > features.y && screenHeight < screenshots.y) {
         this.current = this.links[1];
-      } else if (this.windowTop < 4902) {
+      } else if (screenHeight > screenshots.y && screenHeight < testimonials.y) {
         this.current = this.links[2];
-      } else if (this.windowTop < 5954) {
+      } else if (screenHeight > testimonials.y && screenHeight <  pricing.y) {
         this.current = this.links[3];
-      } else if (this.windowTop < 9590) {
+      } else if (screenHeight > pricing.y && screenHeight <  contact.y) {
         this.current = this.links[4];
-      } else if (this.windowTop > 9590) {
+      } else if (screenHeight > contact.y) {
         this.current = this.links[5];
       }
     },

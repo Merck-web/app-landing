@@ -5,7 +5,7 @@
         <NavBar />
       </div>
 
-      <div class="content">
+      <div id="beforeHome" class="content">
         <HeaderDescription @openModal1="openModal" />
         <HeaderImage />
       </div>
