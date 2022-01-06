@@ -45,15 +45,15 @@ export default {
     handlerActiveClass() {
       if (this.windowTop < 944) {
         this.current = this.links[0];
-      } else if (this.windowTop < 3330) {
+      } else if (this.windowTop < 2509) {
         this.current = this.links[1];
-      } else if (this.windowTop < 5498) {
+      } else if (this.windowTop < 4902) {
         this.current = this.links[2];
-      } else if (this.windowTop < 6519) {
+      } else if (this.windowTop < 5954) {
         this.current = this.links[3];
-      } else if (this.windowTop < 8829) {
+      } else if (this.windowTop < 9590) {
         this.current = this.links[4];
-      } else if (this.windowTop > 8829) {
+      } else if (this.windowTop > 9590) {
         this.current = this.links[5];
       }
     },
