@@ -29,7 +29,7 @@ export default {
         this.show = false;
         const item = document.querySelector("html");
         item.style.overflow = "auto";
-      }, 3000);
+      }, 1000);
     },
   },
 };
