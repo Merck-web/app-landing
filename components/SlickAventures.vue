@@ -150,7 +150,7 @@ export default {
 @media (max-width: 440px) {
   .card {
     width: 300px;
-    height: 450px;
+    height: 350px;
     padding-right: 50px;
     padding-left: 50px;
   }
